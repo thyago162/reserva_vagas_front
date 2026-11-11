@@ -1,49 +1,31 @@
 # reserva_vagas_front
 
-This template should help get you started developing with Vue 3 in Vite.
+Interface web do sistema de [reserva de vagas escolares](https://github.com/thyago162/reserva_vagas). O cidadão conversa com o agente de IA, que o orienta na escolha da escola e na reserva da vaga.
 
-## Recommended IDE Setup
+## Tecnologias
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Vue.js 3, `<TypeScript, Vite, Vuetify...>`
 
-## Recommended Browser Setup
+## Como rodar
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/thyago162/reserva_vagas_front
+cd reserva_vagas_front
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+cp .env.example .env   # defina o endereço do orquestrador
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Variáveis de ambiente
 
-```sh
-npm run build
-```
+| Variável | Descrição |
+|---|---|
+| `<VITE_API_URL>` | Endereço do [cliente MCP](https://github.com/thyago162/reserva_vagas_mcp_client) |
 
-### Lint with [ESLint](https://eslint.org/)
+## Telas
 
-```sh
-npm run lint
-```
-# reserva_vagas_front
+<captura de tela da conversa; se tiver, coloque em docs/ e use ![Tela](docs/tela.png)>
+
+## Status
+
+Projeto em desenvolvimento.
